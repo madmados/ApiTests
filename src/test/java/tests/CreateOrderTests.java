@@ -1,4 +1,4 @@
-package yandex.scooter.tests;
+package tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -61,9 +61,9 @@ public class CreateOrderTests extends BaseClient {
                 .post("/api/v1/orders")
                 .then().log().all()
                 .assertThat()
-                .statusCode(201) //запрос возвращает правильный код ответа - 201
+                .statusCode(201)
                 .extract().path("track");
 
-        assertNotNull(OrderTrack); //успешный запрос возвращает track заказа
+        assertNotNull(OrderTrack);
     }
 }

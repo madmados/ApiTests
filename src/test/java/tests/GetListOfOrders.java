@@ -1,4 +1,4 @@
-package yandex.scooter.tests;
+package tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -26,7 +26,7 @@ public class GetListOfOrders {
 
         listOfOrders = ListOfOrders.getDataForListOfOrdersWithoutParameters();
         orderClient.getListOfOrders(listOfOrders)
-                .statusCode(200) //запрос возвращает правильный код ответа - 200
-                .body("orders", notNullValue()); //успешный запрос возвращает orders - список заказов
+                .statusCode(200)
+                .body("orders", notNullValue());
     }
 }

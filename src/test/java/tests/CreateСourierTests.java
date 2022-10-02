@@ -1,11 +1,10 @@
-package yandex.scooter.tests;
+package tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-
 import yandex.courier.Courier;
 import yandex.courier.CourierClient;
 import yandex.courier.CourierCredentials;
@@ -41,10 +40,10 @@ public class CreateСourierTests {
 
         courier = Courier.getRandomCourier();
         isOk = courierClient.createCourier(courier)
-                .statusCode(201) //запрос возвращает правильный код ответа - 201
+                .statusCode(201)
                 .extract().path("ok");
 
-        assertTrue(isOk); //успешный запрос возвращает ok=true
+        assertTrue(isOk);
     }
 
 
@@ -69,8 +68,8 @@ public class CreateСourierTests {
 
         courier = Courier.getCourierWithoutLogin();
         courierClient.createCourier(courier)
-                .statusCode(400) //запрос возвращает правильный код ответа - 400
-                .body("message", equalTo("Недостаточно данных для создания учетной записи")); //неуспешный запрос возвращает корректное сообщение
+                .statusCode(400)
+                .body("message", equalTo("Недостаточно данных для создания учетной записи"));
     }
 
 
@@ -81,8 +80,8 @@ public class CreateСourierTests {
 
         courier = Courier.getCourierWithoutPassword();
         courierClient.createCourier(courier)
-                .statusCode(400) //запрос возвращает правильный код ответа - 400
-                .body("message", equalTo("Недостаточно данных для создания учетной записи")); //неуспешный запрос возвращает корректное сообщение
+                .statusCode(400)
+                .body("message", equalTo("Недостаточно данных для создания учетной записи"));
     }
 
 
@@ -99,7 +98,7 @@ public class CreateСourierTests {
 
         Courier duplicateCourier = Courier.getCourierDuplicateLogin(courier);
         courierClient.createCourier(duplicateCourier)
-                .statusCode(409) //запрос возвращает правильный код ответа - 409
-                .body("message", equalTo("Этот логин уже используется. Попробуйте другой.")); //неуспешный запрос возвращает корректное сообщение
+                .statusCode(409)
+                .body("message", equalTo("Этот логин уже используется. Попробуйте другой."));
     }
 }

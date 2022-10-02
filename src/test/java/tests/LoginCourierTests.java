@@ -1,16 +1,16 @@
-package yandex.scooter.tests;
-
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.*;
+package tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import yandex.courier.Courier;
 import yandex.courier.CourierClient;
 import yandex.courier.CourierCredentials;
+
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertEquals;
 
 public class LoginCourierTests {
 
@@ -43,8 +43,8 @@ public class LoginCourierTests {
 
         courierCredentials = CourierCredentials.getCredentials(courier);
         courierClient.loginCourier(courierCredentials)
-                .statusCode(200) //запрос возвращает правильный код ответа - 200
-                .body("id", notNullValue()); //успешный запрос возвращает id != null
+                .statusCode(200)
+                .body("id", notNullValue());
     }
 
 
@@ -55,10 +55,10 @@ public class LoginCourierTests {
 
         courierCredentials = CourierCredentials.getCredentialsWithoutLogin(courier);
         String message = courierClient.loginCourier(courierCredentials)
-                .statusCode(400) //запрос возвращает код ответа - 400
+                .statusCode(400)
                 .extract().path("message");
 
-        assertEquals("Некорректное сообщение об ошибке", "Недостаточно данных для входа", message); //неуспешный запрос возвращает корректное сообщение
+        assertEquals("Некорректное сообщение об ошибке", "Недостаточно данных для входа", message);
     }
 
 
@@ -69,10 +69,10 @@ public class LoginCourierTests {
 
         courierCredentials = CourierCredentials.getCredentialsWithoutPassword(courier);
         String message = courierClient.loginCourier(courierCredentials)
-                .statusCode(400) //запрос возвращает код ответа - 400 (Баг: по документации - 400, по факту - 504)
+                .statusCode(400) // В задании должно быть 400, но возвращает 504
                 .extract().path("message");
 
-        assertEquals("Некорректное сообщение об ошибке", "Недостаточно данных для входа", message); //неуспешный запрос возвращает корректное сообщение
+        assertEquals("Некорректное сообщение об ошибке", "Недостаточно данных для входа", message);
     }
 
 
@@ -83,24 +83,24 @@ public class LoginCourierTests {
 
         courierCredentials = CourierCredentials.getCredentialsWithWrongLogin(courier);
         String message = courierClient.loginCourier(courierCredentials)
-                .statusCode(404) //запрос возвращает код ответа - 404
+                .statusCode(404)
                 .extract().path("message");
 
-        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message); //неуспешный запрос возвращает корректное сообщение
+        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message);
     }
 
 
     @Test
     @DisplayName("Login courier with wrong password - Failure")
     @Description("Неуспешная авторизация курьером с некорректным значением password")
-    public void testLoginСourierWithWrongPasswordFailure() { //авторизоваться курьером невозможно с некорректным паролем
+    public void testLoginСourierWithWrongPasswordFailure() {
 
         courierCredentials = CourierCredentials.getCredentialsWithWrongPassword(courier);
         String message = courierClient.loginCourier(courierCredentials)
-                .statusCode(404) //запрос возвращает код ответа - 404
+                .statusCode(404)
                 .extract().path("message");
 
-        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message); //неуспешный запрос возвращает корректное сообщение
+        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message);
     }
 
 
@@ -111,9 +111,9 @@ public class LoginCourierTests {
 
         courierCredentials = CourierCredentials.getCredentialsNonexistentCourier(courier);
         String message = courierClient.loginCourier(courierCredentials)
-                .statusCode(404) //запрос возвращает код ответа - 404
+                .statusCode(404)
                 .extract().path("message");
 
-        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message); //неуспешный запрос возвращает корректное сообщение
+        assertEquals("Некорректное сообщение об ошибке", "Учетная запись не найдена", message);
     }
 }

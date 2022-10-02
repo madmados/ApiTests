@@ -1,7 +1,6 @@
 package yandex;
 
 import config.Config;
-import io.qameta.allure.Step;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;

@@ -1,8 +1,9 @@
-package yandex.order;
+package order;
 
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import yandex.BaseClient;
+import yandex.order.ListOfOrders;
 
 public class OrderClient extends BaseClient {
 
