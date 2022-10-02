@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="199b1e5f-d614-4e43-9e78-e2e92be50112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/ListOfOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/BaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/courier/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/courier/CourierClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/courier/CourierCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/order/ListOfOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/order/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CreateOrderTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CreateСourierTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/GetListOfOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginCourierTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="199b1e5f-d614-4e43-9e78-e2e92be50112" name="Changes" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,6 +153,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663161197698</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1664725767098</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664725767098</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,5 +173,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>
