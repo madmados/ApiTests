@@ -18,5 +18,14 @@ public class OrderClient extends BaseClient {
                 .then().log().all()
                 .assertThat();
     }
+    @Step("Получение заказов")
+    public ValidatableResponse getOrderTrack(Order order) {
+        return getSpec()
+                .body(order)
+                .when()
+                .post(ROOT_ORDER)
+                .then().log().all()
+                .assertThat();
+    }
 
 }

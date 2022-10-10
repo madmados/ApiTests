@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="199b1e5f-d614-4e43-9e78-e2e92be50112" name="Changes" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/yandex/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/ListOfOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/OrderClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/yandex/order/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yandex/order/OrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CreateOrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateOrderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/04655f1c-0934-4f70-8e52-a8d498f451c6-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/28cc310a-90c3-4597-80ac-12e4532d58f1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/31ee4826-eee3-4825-9d44-cc842d77e50f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4e65218b-93de-438a-b790-b1dcabe2e4ba-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4e7fe7dc-a6a6-4d65-9ddd-e8dcc113de71-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/50de731d-0e68-4df3-917f-628734d40337-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/52bd1947-4522-454d-90c5-1ebd6ad14805-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/69b1c0f7-5ce4-4a4e-9a37-5e627e50c1ea-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/79ce7dea-6183-43dd-b04a-79cbc31be0d4-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7f7973ce-dbc3-4256-85ef-821d235293f4-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/86d62142-1833-4030-a7fa-8cd753241524-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9a970e7a-4388-46bc-a48f-c1eaed0c2f37-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9c7f78f6-fefb-4380-bab5-3e2810ec842c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9f682e54-25a2-479a-bd47-207674a3fa37-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/afe795f6-a3c8-4db6-b8da-1d1f3cb0c3d4-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d7446aaa-0b29-4916-a5b3-7d687083f448-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Mados/IdeaProjects/ApiTests/src/main/java"
+    "last_opened_file_path": "C:/Users/Mados/IdeaProjects/Allure"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,6 +71,7 @@
       <recent name="C:\Users\Mados\IdeaProjects\ApiTests\src\test\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="yandex.order" />
       <recent name="config" />
       <recent name="setup" />
     </key>
@@ -58,17 +81,17 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginCourierTests">
-    <configuration name="CourierRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateOrderTests">
+    <configuration name="CreateOrderTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiTests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="courier.*" />
+          <option name="PATTERN" value="yandex.scooter.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="courier" />
-      <option name="MAIN_CLASS_NAME" value="courier.CourierRegisterTest" />
+      <option name="PACKAGE_NAME" value="yandex.scooter.tests" />
+      <option name="MAIN_CLASS_NAME" value="yandex.scooter.tests.CreateOrderTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,6 +112,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateOrderTests.testCreateOrderWithVariousColorScooter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateOrderTests" />
+      <option name="METHOD_NAME" value="testCreateOrderWithVariousColorScooter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateСourierTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiTests" />
       <extension name="coverage">
@@ -99,21 +138,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CreateСourierTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetListOfOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ApiTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GetListOfOrders" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginCourierTests" />
-        <item itemvalue="JUnit.GetListOfOrders" />
-        <item itemvalue="JUnit.CreateСourierTests" />
         <item itemvalue="JUnit.CreateOrderTests" />
-        <item itemvalue="JUnit.CourierRegisterTest" />
+        <item itemvalue="JUnit.CreateСourierTests" />
+        <item itemvalue="JUnit.CreateOrderTests.testCreateOrderWithVariousColorScooter" />
+        <item itemvalue="JUnit.CreateOrderTests (1)" />
+        <item itemvalue="JUnit.LoginCourierTests" />
       </list>
     </recent_temporary>
   </component>
